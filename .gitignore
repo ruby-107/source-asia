@@ -1,0 +1,21 @@
+# env
+.env
+
+# logs
+*.log
+
+# dependencies
+/vendor/
+
+# build files
+*.out
+*.exe
+*.test
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.dba/
