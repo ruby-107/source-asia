@@ -35,7 +35,7 @@ DB_NAME=your_db
 
 4. Run project
    go mod tidy
-   go run cmd/main.go
+   go run main.go
 
 APIs
 🔹 POST /request
