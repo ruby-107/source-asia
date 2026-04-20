@@ -30,6 +30,12 @@ func main() {
 	r.HandleFunc("/request", h.Request).Methods("POST")
 	r.HandleFunc("/stats", h.Stats).Methods("GET")
 
-	log.Println("Server running on :" + os.Getenv("PORT"))
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), r))
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	log.Println("Server running on :" + port)
+	log.Fatal(http.ListenAndServe(":"+port, r))
+
 }
